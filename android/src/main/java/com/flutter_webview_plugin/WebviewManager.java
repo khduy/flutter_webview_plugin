@@ -139,7 +139,7 @@ class WebviewManager {
                 if (ignoreSSLErrors){
                     handler.proceed();
                 }else {
-                    super.onReceivedSslError(view, handler, error);
+                    handler.cancel();
                 }
             }
         };
